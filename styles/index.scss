@@ -2,6 +2,9 @@ $nav-button-font-size: 16px;
 $nav-button-font: Roboto; 
 $nav-button-width: 90px;  
 $nav-button-height: 30px; 
+$cards-background-color: #4D5359; 
+$genre-size: 26px; 
+$genre-color: white; 
 
 body {
     margin: 0;
@@ -19,12 +22,17 @@ body {
     .button-sign-up {
         border: none; 
         background-color: black; 
-        color: white; 
+        color: white;
+        border-radius: 30px; 
         font-size: $nav-button-font-size; 
         font-family: $nav-button-font;
         width: $nav-button-width; 
         height: $nav-button-height; 
 
+    }
+
+    .button-sign-up:hover {
+        background-color: grey; 
     }
 
     .button-log-in {
@@ -37,6 +45,10 @@ body {
         width: $nav-button-width;
         height: $nav-button-height;  
 
+    }
+
+    .button-log-in:hover {
+        background-color: white; 
     }
 
 }
@@ -65,6 +77,17 @@ body {
     font-size: 30px; 
     }
 
+    .home-container, .search-container, 
+    .library-container {
+        display: flex; 
+
+    }
+
+    .fa-home, .fa-search, .fa-book-open{
+        padding-right: 10px; 
+        font-size: 20px;
+    }
+
 
     .menu-nav-links {
         list-style-type: none; 
@@ -73,7 +96,7 @@ body {
     }
 
         .menu-nav-links li {
-            padding-bottom: 10px; 
+            padding-bottom: 10px;
         }
 
         .menu-nav-links a {
@@ -88,10 +111,158 @@ body {
 
 .cards-container {
     display: grid; 
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 80px 200px 80px 200px 80px 200px 80px 200px;
+    grid-gap: 20px; 
+    margin: 20px; 
     min-height: 100vh;  
 
+    .genre1 {
+        grid-column: 2 / span 1;
+        grid-row: 1  / span 1; 
+        font-size: $genre-size; 
+        color: $genre-color; 
+    }
+
     .card1 {
-        background-color: #284B63; 
+        grid-column: 2 / span 1;
+        grid-row: 2  / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card2 {
+        grid-column: 3 / span 1;
+        grid-row: 2  / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card3 {
+        grid-column: 4 / span 1;
+        grid-row: 2  / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card4 {
+        grid-column: 5 / span 1;
+        grid-row: 2  / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card5 {
+        grid-column: 6 / span 1;
+        grid-row: 2  / span 1; 
+        background-color:$cards-background-color; 
+    }
+    
+    .genre2 {
+        grid-column: 2 / span 1;
+        grid-row: 3  / span 1;
+        font-size: $genre-size; 
+        color: $genre-color;  
+    }
+
+    .card6 {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card7 {
+        grid-column: 3 / span 1;
+        grid-row: 4 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card8 {
+        grid-column: 4 / span 1;
+        grid-row: 4 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card9 {
+        grid-column: 5 / span 1;
+        grid-row: 4 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card10 {
+        grid-column: 6 / span 1;
+        grid-row: 4 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .genre3 {
+        grid-column: 2 / span 1;
+        grid-row: 5  / span 1; 
+        font-size: $genre-size; 
+        color: $genre-color; 
+    }
+
+    .card11 {
+        grid-column: 2 / span 1;
+        grid-row: 6 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card12 {
+        grid-column: 3 / span 1;
+        grid-row: 6 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card13 {
+        grid-column: 4 / span 1;
+        grid-row: 6 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card14 {
+        grid-column: 5 / span 1;
+        grid-row: 6 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card15 {
+        grid-column: 6 / span 1;
+        grid-row: 6 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .genre4 {
+        grid-column: 2 / span 2;
+        grid-row: 7  / span 1; 
+        font-size: $genre-size; 
+        color: $genre-color; 
+    }
+
+    .card16 {
+        grid-column: 2 / span 1;
+        grid-row: 8 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card17 {
+        grid-column: 3 / span 1;
+        grid-row: 8 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card18 {
+        grid-column: 4 / span 1;
+        grid-row: 8 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card19 {
+        grid-column: 5 / span 1;
+        grid-row: 8 / span 1; 
+        background-color:$cards-background-color; 
+    }
+
+    .card20 {
+        grid-column: 6 / span 1;
+        grid-row: 8 / span 1; 
+        background-color:$cards-background-color; 
     }
 }
 
@@ -113,6 +284,12 @@ body {
         font-size: 25px; 
         margin: 5px; 
 
+    }
+
+    .fa-volume-up {
+        font-size: 20px; 
+        margin-right: 10px; 
+        color: white; 
     }
 
     .volume {
