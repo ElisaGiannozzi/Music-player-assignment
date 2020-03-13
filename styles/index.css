@@ -52,7 +52,6 @@ body {
   top: 0;
   bottom: 0;
   min-width: 200px;
-  min-height: 100vh;
   background-color: #3C6E71;
 }
 .menu .site-title {
@@ -222,6 +221,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   background-color: black;
+  position: sticky;
 }
 .player-container .player-buttons {
   grid-column-start: 2;
