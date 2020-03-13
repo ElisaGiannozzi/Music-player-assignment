@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background-color: #353535;
+  font-family: Roboto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 10px;
+  background-color: black;
+}
+.button-container .button-sign-up {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-family: Roboto;
+  width: 90px;
+  height: 30px;
+}
+.button-container .button-log-in {
+  border: none;
+  background-color: #D9D9D9;
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  border-radius: 30px;
+  width: 90px;
+  height: 30px;
+}
+
+.main-section {
+  display: grid;
+  grid-template-rows: repeat 8 1fr;
+  grid-template-columns: repeat 6 1fr;
+  min-height: 100vh;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 200px;
+  min-height: 100vh;
+  background-color: #3C6E71;
+}
+.menu .site-title {
+  padding: 10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 30px;
+}
+.menu .menu-nav-links {
+  list-style-type: none;
+  padding-inline-start: 0;
+  padding: 10px;
+}
+.menu .menu-nav-links li {
+  padding-bottom: 10px;
+}
+.menu .menu-nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.menu .menu-nav-links a:hover {
+  text-decoration: underline;
+}
+
+.cards-container {
+  display: grid;
+  min-height: 100vh;
+}
+.cards-container .card1 {
+  background-color: #284B63;
+}
+
+.player-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: black;
+}
+.player-container .player-buttons {
+  grid-column-start: 2;
+  justify-self: center;
+}
+.player-container .btn {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin: 5px;
+}
+.player-container .volume {
+  grid-column-start: 3;
+  justify-self: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */
